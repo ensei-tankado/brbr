@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pending Requests"
+        android:textColor="#4CAF50"
+        android:background="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/text"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewRequests"
+        android:layout_below="@+id/text"/>
+
+    <LinearLayout
+        android:layout_below="@id/listViewRequests"
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bookingConfirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listViewRequests"
+            android:background="#ffffff"
+            android:text="Confirmed Bookings"
+            android:textAllCaps="false"
+            android:textColor="#4CAF50"
+            android:textSize="25sp"
+            android:padding="20px"
+            android:textStyle="bold"
+            android:layout_above="@+id/linear"/>
+
+        <Button
+            android:id="@+id/barberSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookingConfirmed"
+            android:background="#ffffff"
+            android:text="Logout"
+            android:padding="20px"
+            android:textAllCaps="false"
+            android:textColor="#D10D0D"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/linear"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4CAF50"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
+            android:clickable="false" />
+    </LinearLayout>
+
+</RelativeLayout>

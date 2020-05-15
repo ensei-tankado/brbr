@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@drawable/people"
+                android:layout_gravity="center"
+                android:id="@+id/brbr"/>
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/brbr"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=''
+                android:layout_centerInParent="true"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:padding="10px"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/customerPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=''
+                android:padding="10px"
+                android:layout_centerInParent="true"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/confirmedDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=''
+                android:padding="10px"
+                android:layout_centerInParent="true"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/confirmedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=''
+                android:padding="10px"
+                android:layout_centerInParent="true"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/customerMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=''
+                android:padding="10px"
+                android:layout_centerInParent="true"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="4.0dip"
+                android:paddingTop="5.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingBottom="1.0dip">
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4CAF50"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
+            android:clickable="false" />
+    </LinearLayout>
+
+</RelativeLayout>
