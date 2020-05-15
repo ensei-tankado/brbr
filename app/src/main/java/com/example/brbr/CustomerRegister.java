@@ -87,6 +87,7 @@ public class CustomerRegister extends Activity {
                             writeNewUser(userName,fullName,mobile,uid,place);
                             Toast.makeText(getApplicationContext(),"Customer Registration Successful...",Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(CustomerRegister.this, CustomerLogin.class);
+                            startActivity(intent);
 //                        mAuth.
 //                        UserProfileChangeRequest profile = new UserProfileChangeRequest.Builder().setDisable(true).build();
 //                        user.updateProfile(profile).addOnCompleteListener(new OnCompleteListener<Void>() {
